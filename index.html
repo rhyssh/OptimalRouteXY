@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinate Plotter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="form">
+        <label for="kota1">Kota - 1 (Format: x,y): </label><br>
+        <input type="text" name="kota1" id="kota1"><br>
+        <label for="kota2">Kota - 2 (Format: x,y): </label><br>
+        <input type="text" name="kota2" id="kota2"> <br>
+        <label for="hubungkan">Hubungkan : (Format:kota1,kota2)</label><br>
+        <input type="text" name="hubungkan" id="relasi"><br>
+        <label for="startPoint">Titik Awal: </label><br>
+        <input type="text" name="startPoint" id="startPoint"><br>
+        <label for="endPoint">Titik Akhir: </label><br>
+        <input type="text" name="endPoint" id="endPoint">
+
+    </div>
+    <button id="tambahKota">Tambah Kota</button>
+    <button id="HapusKota">Hapus Kota</button>
+    <button id="optimalJarak" onclick="findOptimalPath()">Jarak Optimal</button>
+
+    <button id="hubungkanKota">Hubungkan </button>
+    <canvas id="canvas"></canvas>
+    <script src="main.js"></script>
+</body>
+
+</html>
